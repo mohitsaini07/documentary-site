@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  display: flex;
+}
+header {
+  border: 1px solid #ccc;
+  height: 100vh;
+  width: 300px;
+  position: sticky;
+  top: 0;
+}
+nav h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav ul li {
+  font-size: 20px;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+nav ul li:hover {
+  background: #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+/* Main Section */
+
+main {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+section article{
+    max-width: 1200px;
+}
+article p {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+article ul {
+  margin-bottom: 40px;
+}
+article ul li {
+  padding: 10px;
+  margin-left: 50px;
+}
+
+#Hello_world {
+  margin-top: 40px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #f7f7f7;
+}
+@media (max-width: 480px){
+    body{
+        flex-direction: column;
+    }
+    header{
+        height: 200px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
